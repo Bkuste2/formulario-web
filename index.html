@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#8b8b8b">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#8b8b8b">
+
+
+  <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+
+  <!-- CSS e Bootstrap -->
+  <link rel="stylesheet" href="./bootstrap-5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <title>Formulário Web</title>
+</head>
+
+<body class="bg-dark" style="font-family: 'Raleway', sans-serif;">
+  <nav class="navbar navbar-expand-lg navbar-dark p-3" id="nav"
+    style="background-color: #212529; z-index: 1;border-bottom: 2px solid #00ffff;">
+    <div class="container-fluid w-75">
+      <a class="navbar-brand fw-bold fs-5" style="color: #00ffff;" href="./index.html">SSH TUR</a>
+      <button class="navbar-toggler border outline-0"
+        style="border-color:#00ffff !important; box-shadow: 0 0 0 0 !important;" id="button" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+          style="color: #00ffff !important; background-image: none; ">
+          <i class="fas fa-bars" style="font-size: 1.5rem; color: #00ffff !important;"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" style="top: 100%;">
+        <ul class="navbar-nav justify-content-between w-75">
+          <div class="d-flex">
+            <li class="nav-item mx-1">
+              <a class="nav-link text-dark border border-1 border-dark py-1 px-3 rounded-3 active"
+                style="background-color: #00ffff; font-weight: bold !important;" aria-current="page" href="./index.html"><i
+                  class="fas fa-home py-1 px-1"></i>Home</a>
+            </li>
+            <li class="nav-item  mx-1">
+              <a class="nav-link text-dark border border-1 border-dark py-1 px-3 rounded-3"
+                style="background-color: #00ffff;" href=""><i class="fas fa-plane py-1 px-1"></i>Viagens</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link text-dark border border-1 border-dark py-1 px-3 rounded-3"
+                style="background-color: #00ffff;" href="./integrantes.html"><i class="fas fa-users py-1 px-1"></i>Equipe</a>
+            </li>
+          </div>
+          <div>
+            <li class="d-flex align-items-center nav-item mx-1">
+              <a class="nav-link text-dark border border-1 border-dark py-1 px-3 rounded-3"
+                style="background-color: #00ffff;" href="login.html"><i
+                  class="fas fa-money-bill-wave-alt py-1 px-1"></i>BRL - R$</a>
+              <a class="nav-link text-dark border border-1 border-dark mx-1 py-1 px-2 rounded-3"
+                style="color: #212529 !important; background-color: #00ffff !important;" href="login.html"><i
+                  class="fas fa-user py-1 px-1"></i>Login</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="carousel-master">
+    <div class="slider">
+      <div class="slide active">
+        <img src="./img/img1.jpg" loading="lazy" alt="">
+        <div class="text-carousel">
+          <h1>Viajar nunca foi tão fácil!</h1>
+          <h2>Temos viagens para os mais diversos lugares e oferecemos um custo abaixo do preço de mercado para nossos
+            clientes.</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./img/img2.jpg" loading="lazy" alt="">
+        <div class="text-carousel">
+          <h1>Estamos há 20 anos no mercado.</h1>
+          <h2>Apresentamos a maior variedade de viagens do mercado, sendo referência no que se diz à CONFORTO e PREÇOS
+            BAIXOS.</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./img/img3.jpg" loading="lazy" alt="">
+        <div class="text-carousel">
+          <h1>Está difícil arranjar uma viagem agradável?</h1>
+          <h2>Navegue agora e encontre apenas aqui um destino que se adeque aos seus padrões.</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./img/img4.jpg" loading="lazy" alt="">
+        <div class="text-carousel">
+          <h1>Os agentes mais requisitados do mercado!</h1>
+          <h2>Reunimos três dos agentes de viagens mais requisitados do mercado, quando o assunto é conforto, viagens e
+            preço baixo.</h2>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./img/img5.jpg" loading="lazy" alt="">
+        <div class="text-carousel">
+          <h1>Partiu viver uma viagem inesquecível?</h1>
+          <h2>Você merece voar para lugares incríveis. Aproveite os melhores destinos!</h2>
+        </div>
+      </div>
+    </div>
+    <div class="controls-Master">
+      <div class="prevMaster">
+        <span> < </span>
+
+      </div>
+      <div class="nextMaster">
+        <span> > </span>
+      </div>
+    </div>
+
+    <div id="indicatorMaster" class="indicatorMaster"></div>
+
+  </section>
+
+
+  <div id="container" class="container-fluid d-flex justify-content-center align-items-center bg-dark"
+    style="z-index: 1; height: 100vh; position: relative; ;top: -15vh;">
+    <div class="row d-flex h-100 justify-content-between align-items-center p-5">
+      <h1 class=" text-white text-center font-500" style="height: 10%;">Viagens</h1>
+
+      <!-- Card 1 -->
+      <div class="col w-25 d-flex position-relative flex-column mx-1 p-0 bg-light"
+        style="height: 70%; border-radius: 30px !important;">
+        <img class="w-100 h-75" src="./img/São Paulo.png" style="border-radius: 25px;" alt="IMAGEM PAIS DA VIAGEM">
+        <div class="d-flex px-2 flex-column w-100 position-absolute bg-light"
+          style="top: 45%; height: 55%; border-radius: 20px;">
+
+          <div class="d-flex">
+            <h1 class="titleCards">De Florianópolis a <br> <p class="roxo">São Paulo</p> </h1>
+            <h2 class="subtitles">Preços a partir de: <br> <p class="roxo">R$1364,48</p> </h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="datas">De: <br> <p class="roxo IDA">2022-07-25</p></h2>
+            <h2 class="datas voltaH2">Até: <br> <p class="roxo VOLTA"> 2022-08-07</p></h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="subtitles embarque">Embarque: <p class="roxo Embarque">16h30</p></h2>
+            <h2 class="subtitles desembarque">Desembarque: <p class="roxo Desembarque">17h35</p></h2>
+            <div class="divButton">
+              <button type="button" class="btn btn-lg shadow-lg ">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col w-25 d-flex position-relative flex-column mx-1 p-0 bg-light"
+        style="height: 70%; border-radius: 30px !important;">
+        <img class="w-100 h-75" src="./img/Palmas.png" style="border-radius: 25px;" alt="IMAGEM PAIS DA VIAGEM">
+        <div class="d-flex px-2 flex-column justify-content-between w-100 position-absolute bg-light"
+          style="top: 45%; height: 55%; border-radius: 20px;">
+          
+          <div class="d-flex">
+            <h1 class="titleCards">De Florianópolis a <br> <p class="roxo">Palmas</p> </h1>
+            <h2 class="subtitles">Preços a partir de: <br> <p class="roxo">R$788,58</p> </h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="datas">De: <br> <p class="roxo IDA">2021-08-15</p></h2>
+            <h2 class="datas voltaH2">Até: <br> <p class="roxo VOLTA"> 2021-07-24</p></h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="subtitles embarque">Embarque: <p class="roxo Embarque">14h30</p></h2>
+            <h2 class="subtitles desembarque">Desembarque: <p class="roxo Desembarque">21h00</p></h2>
+            <div class="divButton">
+              <button type="button" class="btn btn-lg shadow-lg ">Comprar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col w-25 d-flex position-relative flex-column mx-1 p-0 bg-light"
+        style="height: 70%; border-radius: 30px !important;">
+        <img class="w-100 h-75" src="./img/rj.jpg" style="border-radius: 25px;" alt="IMAGEM PAIS DA VIAGEM">
+        <div class="d-flex px-2 flex-column justify-content-between w-100 position-absolute bg-light"
+          style="top: 45%; height: 55%; border-radius: 20px;">
+
+          <div class="d-flex">
+            <h1 class="titleCards">De Florianópolis a <br> <p class="roxo">Rio de Janeiro</p> </h1>
+            <h2 class="subtitles">Preços a partir de: <br> <p class="roxo">R$788,58</p> </h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="datas">De: <br> <p class="roxo IDA">2021-11-27</p></h2>
+            <h2 class="datas voltaH2">Até: <br> <p class="roxo VOLTA"> 2022-12-22</p></h2>
+          </div>
+
+          <div class="d-flex">
+            <h2 class="subtitles embarque">Embarque: <p class="roxo Embarque">18h15</p></h2>
+            <h2 class="subtitles desembarque">Desembarque: <p class="roxo Desembarque">23h20</p></h2>
+            <div class="divButton">
+              <button type="button" class="btn btn-lg shadow-lg ">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="mt-5 ">
+    <div class="container-xxl bg-white ">
+      <h2 class="text-center pt-3 pb-3">Formulário de compra</h2>
+
+      <form id="formulario" name="formulario-de-avaliacao" method="POST" action="/" data-netlify="true" class="">
+        <div class="ms-4">
+          <div class="input-group mb-3 ms-3">
+
+            <div class="form-floating col-2 ">
+              <input type="text" class="form-control " id="nome" placeholder="Digite Seu Nome" required>
+              <label for="nome">Nome</label>
+              <!--Nome-->
+            </div>
+
+            <div class="form-floating col-5 ms-3">
+              <input type="text" class="form-control" id="sobrenome" placeholder="Digite Seu Sobrenome" required>
+              <label for="sobrenome">Sobrenome</label>
+              <!--Sobrenome-->
+            </div>
+
+            <div class="form-floating wdt-20 col-2 ms-3">
+              <input type="text" class="form-control" id="RG" placeholder="Digite Seu RG" required>
+              <label for="RG">RG</label>
+              <!--RG-->
+            </div>
+
+            <div class="form-floating wdt-20 col-2 ms-3">
+              <input type="text" class="form-control" id="CPF" placeholder="Digite Seu CPF" required>
+              <label for="CPF">CPF</label>
+              <!--CPF-->
+            </div>
+
+          </div>
+
+
+          <div class="input-group mb-3 ms-3">
+            <div class="form-floating col-3 mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <label for="email">Digite Aqui Seu endereço de E-mail</label>
+            </div>
+
+            <div class="form-floating ms-3">
+              <input type="text" class="form-control" id="cep" placeholder="Digite Seu CEP" required>
+              <label for="cep">CEP</label>
+            </div>
+
+            <div class="form-floating ms-4 col-6">
+              <input type="text" class="form-control" id="logradouro" placeholder="Logradouro" required disabled>
+              <label for="logradouro">Logradouro</label>
+            </div>
+
+            <div class="form-floating col-2">
+              <input type="text" class="form-control" id="numero" placeholder="Número" required>
+              <label for="numero">Número</label>
+            </div>
+
+            <div class="form-floating ms-3 col-2">
+              <input type="text" class="form-control" id="complemento" placeholder="Complemento" required>
+              <label for="complemento">Complemento</label>
+            </div>
+
+            <div class="form-floating col-4 ms-3">
+              <input type="text" class="form-control" id="bairro" placeholder="Bairro" required disabled>
+              <label for="bairro">Bairro</label>
+            </div>
+            <div class="form-floating col-3 ms-3">
+              <select id="uf" class="form-select" aria-label="Default select example ms-3" disabled>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group mb-3 ms-3">
+
+            <div class="form-floating col-3">
+              <input type="text" class="form-control" id="dataInicial" placeholder="Data de Partida" required>
+              <label for="dataInicial">Data de Partida</label>
+            </div>
+
+            <div class="form-floating col-3">
+              <input type="text" class="form-control" id="dataInicial2" placeholder="Data de Partida" required>
+              <label for="dataInicial2">Data de Final</label>
+            </div>
+
+            <div class="form-floating col-3 ms-4">
+              <input type="text" class="form-control" id="horario" placeholder="Data de Partida" required>
+              <label for="horario">Horario</label>
+            </div>
+
+            <div class="form d-flex align-items-center a col-5 ms-4 text-center">
+              <label for="poltrona">Selecione Sua Poltrona</label>
+              <select id="poltrona" class="form-select" aria-label="Default select example ms-3">
+                <option value="latam">LATAM</option>
+                <option value="latam">Azul</option>
+                <option value="latam">Gol</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form d-flex align-items-center a col-9 text-center">
+            <label for="poltrona">Empresa</label>
+            <input type="text" class="form-control" value="LATAM" disabled>
+            <div class="botao">
+              <button id="btnForm" type="submit" class="btn btn-primary lbotao">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./bootstrap-5.1.3/js/bootstrap.min.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.5.3/dist/sweetalert2.all.min.js"></script>
+  
+</body>
+
+</html>
